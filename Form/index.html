@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="process_registration.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="university_id">University ID:</label>
+        <input type="text" id="university_id" name="university_id" required>
+        
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" required>
+        
+        <label for="year_of_passout">Year of Passout:</label>
+        <input type="text" id="year_of_passout" name="year_of_passout" required>
+        
+        <label for="cgpa">CGPA:</label>
+        <input type="text" id="cgpa" name="cgpa" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label> -->
+
+        <label for="gender">Gender:</label>
+        <div class="gender-container">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        
+        <label for="mode_of_classes">Mode of Classes:</label>
+        <select id="mode_of_classes" name="mode_of_classes">
+            <option value="In-Person">In-Person</option>
+            <option value="Online">Online</option>
+            <option value="Hybrid">Hybrid</option>
+        </select>
+        
+        <label for="course_type">Course Type:</label>
+        <select id="course_type" name="course_type">
+            <option value="Full-Time">Full-Time</option>
+            <option value="Part-Time">Part-Time</option>
+        </select>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

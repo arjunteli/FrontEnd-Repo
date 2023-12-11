@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drivinglicenseeligibility</title>
+    <script>
+        function drivinglicenseeligibility(){
+            let num = document.getElementById('num').value;
+            if (num>=18 && num<66) {
+                console.log("Eligible for Driving License");
+            } else {
+                console.log("Not Eligible for Driving License");
+            }
+            
+        }
+            
+    </script>
+</head>
+<body>
+    <label for="">Enter you Age : </label>
+    <input type="text" id = "num"><br>
+    <button onclick="drivinglicenseeligibility()">Check Eligibility</button>
+
+</body>
+</html>

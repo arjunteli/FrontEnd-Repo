@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JvaScript</title>
+    <script>
+        function greet(){
+            console.log("Hello  world");
+        }
+
+        function getPiValue(){
+            return 3.14;
+        }
+        function getPi(){
+            let p = getPiValue();
+            console.log(p);
+        }
+        function sum(a,b){
+            let sum = findSum(a,b);
+            console.log(sum);
+        }
+        function findSum(a,b){
+            return a+b;
+        }
+        function getSquare(a){
+            console.log("Square = " +  a*a);
+        }
+        
+    </script>
+</head>
+<body>
+    <button type="button" onclick="greet()" >greet</button><br><br>
+    <button type="button" onclick="getPi()">getPi()</button><br><br>
+    <button type="button" onclick="sum(4,5)">sum</button><br><br>
+    <button type="button" onclick="getSquare(5)">square</button><br><br>
+</body>
+</html>

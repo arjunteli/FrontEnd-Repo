@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controlconstruct</title>
+    <script>
+        function evenOrOdd(){
+            let num = document.getElementById('number').value;
+            if(num%2 == 0){
+                console.log(num + " is an Even Number");
+            }else{
+                console.log(num + " is an Odd Number");
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>Enter a Number : </label>
+    <input type="text"  id="number"><br>
+    <button onclick="evenOrOdd()">Click Me</button>
+</body>
+</html>

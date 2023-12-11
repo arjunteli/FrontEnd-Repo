@@ -1,0 +1,31 @@
+div{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-image: url("download.jpg");
+
+}
+p{  
+    font-size: 20px;
+    /* margin: 50px; */
+    color:red;
+}
+body{
+    
+    background-image: url("abstract-artistic-artwork-backdrop.jpg");
+    background:cover;
+    background-size: cover;
+}
+h1{
+    height: 50px;
+    background-color: red;
+    text-align: center;
+}
